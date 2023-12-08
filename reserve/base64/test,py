@@ -1,0 +1,5 @@
+def string_to_binary(s):
+    return ''.join(format(ord(c), '08b') for c in s)
+
+s = "PcnXPtjYONDbDZHVCNDVSp1VPM5pUI4X8I5z"
+print(string_to_binary(s))
