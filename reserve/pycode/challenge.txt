@@ -1,0 +1,161 @@
+  1           0 LOAD_CONST               0 (0)
+              2 LOAD_CONST               1 (('number',))
+              4 IMPORT_NAME              0 (Crypto.Util)
+              6 IMPORT_FROM              1 (number)
+              8 STORE_NAME               1 (number)
+             10 POP_TOP
+
+  3          12 LOAD_CONST               2 ('8b2e4e858126bc8478d6a6a485215f03')
+             14 STORE_NAME               2 (enc)
+
+  5          16 LOAD_CONST               3 (<code object extract_number at 0x0000020F3AE81DB0, file "1.py", line 5>)
+             18 LOAD_CONST               4 ('extract_number')
+             20 MAKE_FUNCTION            0
+             22 STORE_NAME               3 (extract_number)
+
+ 13          24 LOAD_CONST               5 (<code object transform at 0x0000020F3AE8F0C0, file "1.py", line 13>)
+             26 LOAD_CONST               6 ('transform')
+             28 MAKE_FUNCTION            0
+             30 STORE_NAME               4 (transform)
+
+ 24          32 LOAD_NAME                5 (__name__)
+             34 LOAD_CONST               7 ('__main__')
+             36 COMPARE_OP               2 (==)
+             38 POP_JUMP_IF_FALSE      104
+
+ 26          40 LOAD_NAME                6 (input)
+             42 LOAD_CONST               8 ('input your number:')
+             44 CALL_FUNCTION            1
+             46 STORE_NAME               7 (num)
+
+ 27          48 LOAD_NAME                8 (bytes)
+             50 LOAD_METHOD              9 (fromhex)
+             52 LOAD_NAME                7 (num)
+             54 CALL_METHOD              1
+             56 STORE_NAME              10 (tmp)
+
+ 28          58 LOAD_NAME                4 (transform)
+             60 LOAD_NAME               10 (tmp)
+             62 CALL_FUNCTION            1
+             64 LOAD_METHOD             11 (hex)
+             66 CALL_METHOD              0
+             68 STORE_NAME              12 (res)
+
+ 29          70 LOAD_NAME                2 (enc)
+             72 LOAD_NAME               12 (res)
+             74 COMPARE_OP               2 (==)
+             76 POP_JUMP_IF_FALSE       96
+
+ 30          78 LOAD_NAME               13 (print)
+             80 LOAD_CONST               9 ('ok,your flag : DASCTF{{{name}}}')
+             82 LOAD_ATTR               14 (format)
+             84 LOAD_NAME                7 (num)
+             86 LOAD_CONST              10 (('name',))
+             88 CALL_FUNCTION_KW         1
+             90 CALL_FUNCTION            1
+             92 POP_TOP
+             94 JUMP_FORWARD             8 (to 104)
+
+ 32     >>   96 LOAD_NAME               13 (print)
+             98 LOAD_CONST              11 ('wrong')
+            100 CALL_FUNCTION            1
+            102 POP_TOP
+        >>  104 LOAD_CONST              12 (None)
+            106 RETURN_VALUE
+
+Disassembly of <code object extract_number at 0x0000020F3AE81DB0, file "1.py", line 5>:
+  6           0 LOAD_FAST                0 (x)
+              2 LOAD_FAST                0 (x)
+              4 LOAD_CONST               1 (11)
+              6 BINARY_RSHIFT
+              8 BINARY_XOR
+             10 STORE_FAST               0 (x)
+
+  7          12 LOAD_FAST                0 (x)
+             14 LOAD_FAST                0 (x)
+             16 LOAD_CONST               2 (7)
+             18 BINARY_LSHIFT
+             20 LOAD_CONST               3 (2022072721)
+             22 BINARY_AND
+             24 BINARY_XOR
+             26 STORE_FAST               0 (x)
+
+  8          28 LOAD_FAST                0 (x)
+             30 LOAD_FAST                0 (x)
+             32 LOAD_CONST               4 (15)
+             34 BINARY_LSHIFT
+             36 LOAD_CONST               5 (2323163360)
+             38 BINARY_AND
+             40 BINARY_XOR
+             42 STORE_FAST               0 (x)
+
+  9          44 LOAD_FAST                0 (x)
+             46 LOAD_FAST                0 (x)
+             48 LOAD_CONST               6 (18)
+             50 BINARY_RSHIFT
+             52 BINARY_XOR
+             54 STORE_FAST               0 (x)
+
+ 10          56 LOAD_FAST                0 (x)
+             58 RETURN_VALUE
+
+Disassembly of <code object transform at 0x0000020F3AE8F0C0, file "1.py", line 13>:
+ 14           0 LOAD_CONST               1 (b'')
+              2 STORE_FAST               1 (new_message)
+
+ 15           4 LOAD_GLOBAL              0 (len)
+              6 LOAD_FAST                0 (m)
+              8 CALL_FUNCTION            1
+             10 STORE_FAST               2 (l)
+
+ 16          12 SETUP_LOOP              82 (to 96)
+             14 LOAD_GLOBAL              1 (range)
+             16 LOAD_FAST                2 (l)
+             18 LOAD_CONST               2 (4)
+             20 BINARY_FLOOR_DIVIDE
+             22 CALL_FUNCTION            1
+             24 GET_ITER
+        >>   26 FOR_ITER                66 (to 94)
+             28 STORE_FAST               3 (i)
+
+ 17          30 LOAD_FAST                0 (m)
+             32 LOAD_FAST                3 (i)
+             34 LOAD_CONST               2 (4)
+             36 BINARY_MULTIPLY
+             38 LOAD_FAST                3 (i)
+             40 LOAD_CONST               2 (4)
+             42 BINARY_MULTIPLY
+             44 LOAD_CONST               2 (4)
+             46 BINARY_ADD
+             48 BUILD_SLICE              2
+             50 BINARY_SUBSCR
+             52 STORE_FAST               4 (enc)
+
+ 18          54 LOAD_GLOBAL              2 (number)
+             56 LOAD_METHOD              3 (bytes_to_long)
+             58 LOAD_FAST                4 (enc)
+             60 CALL_METHOD              1
+             62 STORE_FAST               4 (enc)
+
+ 19          64 LOAD_GLOBAL              4 (extract_number)
+             66 LOAD_FAST                4 (enc)
+             68 CALL_FUNCTION            1
+             70 STORE_FAST               4 (enc)
+
+ 20          72 LOAD_GLOBAL              2 (number)
+             74 LOAD_METHOD              5 (long_to_bytes)
+             76 LOAD_FAST                4 (enc)
+             78 LOAD_CONST               2 (4)
+             80 CALL_METHOD              2
+             82 STORE_FAST               4 (enc)
+
+ 21          84 LOAD_FAST                1 (new_message)
+             86 LOAD_FAST                4 (enc)
+             88 INPLACE_ADD
+             90 STORE_FAST               1 (new_message)
+             92 JUMP_ABSOLUTE           26
+        >>   94 POP_BLOCK
+
+ 22     >>   96 LOAD_FAST                1 (new_message)
+             98 RETURN_VALUE
+
