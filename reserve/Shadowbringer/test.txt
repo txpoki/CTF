@@ -1,0 +1,7 @@
+
+
+
+
+hisoralce[64]="#$%&'()*+,-.s0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[h]^_`ab";
+
+oralcehis[64]="ba`_^]h[ZYXWVUTSRQPONMLKJIHGFEDCBA@?>=<;:9876543210s.-,+*)('&%$#";
