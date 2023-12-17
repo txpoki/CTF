@@ -1,0 +1,74 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android)
+SHA-256-Digest-Manifest: Ej5TtjLWFArRq2mwVbck/kdVQL+GMVSITQg+mJouR1c=
+X-Android-APK-Signed: 2, 3
+
+Name: AndroidManifest.xml
+SHA-256-Digest: FUTXwRKaXjnBc0gGyoipWvuky3C+shHt7qquHNh8a0k=
+
+Name: META-INF/com/android/build/gradle/app-metadata.properties
+SHA-256-Digest: cGfHyNNAgTXk6CUE867+uksAlZqJkqzzmr/DOtUedMs=
+
+Name: assets/bgm.m4a
+SHA-256-Digest: JJBeXrYB9eh4pu26UrTDTpn2XIr7LkOg2az7CRt6q44=
+
+Name: classes.dex
+SHA-256-Digest: +4U0Q5xJaytkbg87L6qw9iZqFmQhuVPT8j1JNRvDyBk=
+
+Name: lib/armeabi-v7a/libkeygen.so
+SHA-256-Digest: i9fR1+WO51j2NMHN04xoSZUIsEjAa37iBAYRvlDAVu0=
+
+Name: res/1t.xml
+SHA-256-Digest: bFplqnoy1nu5XM2D2LOnSTMhtiLWJZjtoYFHfZDI7Gs=
+
+Name: res/2-.webp
+SHA-256-Digest: vhV5xCd02sfCznAoOEO5bN0w0Nj+qDUxbKa1BbrF8wA=
+
+Name: res/3N.xml
+SHA-256-Digest: utzdzw+CimdL36TPvBTLxV9sYVO49rLSfuZPM3DosEY=
+
+Name: res/3c.webp
+SHA-256-Digest: 4mmvv4END+jit3NvlFbED+DeJ7kDYIHwlInd2QDF5h4=
+
+Name: res/7E.webp
+SHA-256-Digest: GTbGOtI9WTyc9jk31QMBk658+SHsLUR08K9j5DVz/eA=
+
+Name: res/Pl.xml
+SHA-256-Digest: JT+S9ZF/Wy+/gXlGIvDQi6boogqLZ2XmYmU0uh/1MTU=
+
+Name: res/R5.xml
+SHA-256-Digest: SC3O06ytZxIwfQnSGn94SER+N79Y/SV2YCdvhnl9v5g=
+
+Name: res/Vd.webp
+SHA-256-Digest: 61x2F9xXalpIQshwLbahwcjioHqQZreHuN58dKzdbKM=
+
+Name: res/YB.webp
+SHA-256-Digest: Ba+AfgEDnFt54SwOZqUJPJFzzJydWxbJGYtpv09/FDM=
+
+Name: res/co.webp
+SHA-256-Digest: n54TKrync8d+wnxmdsxvIhIuZb50laEmxs/GvRTv//s=
+
+Name: res/iN.webp
+SHA-256-Digest: U+ESy8h/4Vl+wC76gudm8fvgXLBq7S81H6mNBhkFtyg=
+
+Name: res/iP.webp
+SHA-256-Digest: caopbFPlFM2Y8lcWu3wZiFcfGjoq3pw0mylAhG4Vmw4=
+
+Name: res/nm.png
+SHA-256-Digest: xlWZUj6nq68ENmbu4Do3Zlvvg45xYc0jbKpUQIh59Js=
+
+Name: res/oy.xml
+SHA-256-Digest: GW7nKqtWVm/UasPU+FRWxPA8b5ze87HY+RwEniEPP8M=
+
+Name: res/pY.webp
+SHA-256-Digest: NPpi4NfSl9Hb0a3dBAqUweRKAS7QwiOhJyvIhLuIvio=
+
+Name: res/uF.xml
+SHA-256-Digest: gXUtv3TLiGIJtwJX5jFKzCm3Lz1HTDbQMMjxAt7sS9s=
+
+Name: res/xC.webp
+SHA-256-Digest: BpFTFWihfcdPVh9VgZERAG6cttKOiyNmMDv1Lv5ME4w=
+
+Name: resources.arsc
+SHA-256-Digest: 0xbnJcxSiKJQZY6Tt+sCZCeW0R+YS2L8YyMD/cMf75A=
+

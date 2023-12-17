@@ -1,0 +1,13 @@
+ v3 = 0x90508D47
+ for ( i = 0; i < 4; ++i )
+  {
+    for ( j = 0; j < 33; ++j )
+    {
+      *input_4bytes_1 += (((*input_4bytes_2 << 5) ^ (*input_4bytes_2 >> 4)) + *input_4bytes_2) ^ (v3+ byte_7FF748A6E000[v3 & 3]) ^ v3;
+      *input_4bytes_2 += (((32 * *input_4bytes_1) ^ (*input_4bytes_1 >> 4)) + *input_4bytes_1) ^ (v3+ byte_7FF748A6E000[(v3 >> 11) & 3]);
+      v3 -= 0x77BF7F99;
+    }
+    result = (i + 1);
+  }
+ byte_7FF748A6E000秘钥
+ tea加密
