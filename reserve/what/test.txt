@@ -1,0 +1,2 @@
+flag{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}
+flag{a197b847-7092-53a4-7c41-bc7d6d52e69d}
