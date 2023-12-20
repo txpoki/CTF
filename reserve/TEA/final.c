@@ -36,7 +36,6 @@ int decrypt(unsigned int *a4,int *a5){
     return 0;
   }
   
-  
 }
 int main(int argc, char const *argv[])
 {
@@ -69,9 +68,5 @@ for (int i = 32; i < 127; i++)
   }
 
 }
-
-
-
-
     return 0;
 }

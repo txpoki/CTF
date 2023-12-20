@@ -1,0 +1,72 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_round.webp
+SHA1-Digest: SbjLZFnDW9qv/7upTd1iTkNRRPE=
+
+Name: AndroidManifest.xml
+SHA1-Digest: cFsbIw5kKy1PWUC4hcdZtrxVjLE=
+
+Name: lib/armeabi-v7a/libgetthecorrectkey.so
+SHA1-Digest: I9HDgA7q9GOjsfbTzTHc++f1lTY=
+
+Name: res/xml/data_extraction_rules.xml
+SHA1-Digest: Ghwu4WYnvchcr02+4VjZHTULKWo=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.webp
+SHA1-Digest: o0FSs4sakAKva6sRgud/KoHs52E=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.webp
+SHA1-Digest: SU5WZBa9vK/yXb+93o1MIZk3VqU=
+
+Name: res/drawable-anydpi-v24/ic_launcher_foreground.xml
+SHA1-Digest: BwxiZDkeZtCMrk22gFjgU2Iysh8=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: fPC6QpFe2+Iga+OSLzRDlOLdXbw=
+
+Name: res/drawable/ic_launcher_background.xml
+SHA1-Digest: XDtfiGc8YEhzDEcLJ/pxJhvjdpY=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_round.webp
+SHA1-Digest: Z7OTIiCoki/dPC3isb8X2BzDnis=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
+SHA1-Digest: UqhjYoDOm5r1aN2i8YE++NX9DVQ=
+
+Name: assets/whoami.bin
+SHA1-Digest: zh/hcM6beOtpsAxC/qRhXjSW6JI=
+
+Name: res/drawable-anydpi-v24/$ic_launcher_foreground__0.xml
+SHA1-Digest: 1xYtErdVLdw1fSr/r/H8GiB5sTM=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_round.webp
+SHA1-Digest: Owhm38cuaP12tK1LmDuctEYtRpE=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.webp
+SHA1-Digest: Qa8rkl5+0yhRKjAo6Oe4f8PBvJ0=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.webp
+SHA1-Digest: 2pFREWRKSCLVM01yFS3E9H5+o9E=
+
+Name: res/xml/backup_rules.xml
+SHA1-Digest: wZS7ZejPa7sQA3SlAaIYaZNmCdk=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.webp
+SHA1-Digest: cHOHN+MdT46fsXcdZgGfvvAPlMU=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_round.webp
+SHA1-Digest: Zrxex+M17AWlPCI50C31nVyl3js=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.webp
+SHA1-Digest: qSWgtniTKM9udPXQ/v0gE0VWwvI=
+
+Name: resources.arsc
+SHA1-Digest: F9oiZ0aYfwtD6275ejOei2LBSPw=
+
+Name: classes.dex
+SHA1-Digest: OHO6s1JJZko4iDHknYFJSYwVEk4=
+
+Name: res/mipmap-anydpi-v26/ic_launcher.xml
+SHA1-Digest: UqhjYoDOm5r1aN2i8YE++NX9DVQ=
+

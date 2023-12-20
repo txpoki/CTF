@@ -1,2 +1,20 @@
 flag{aaaaaaaa-aaaa-aaaa-aaaa-aaaaaaaaaaaa}
 flag{a197b847-7092-53a4-7c41-bc7d6d52e69d}
+#include <stdio.h>
+
+int min(int a, int b);
+
+int main() {
+    int num1 = 8;
+    int num2 = 5;
+
+    int result = min(num1, num2);
+    printf("最小值是: %d\n", result);
+
+    return 0;
+}
+
+int min(int a, int b) {
+    int min_value = (a < b) ? a : b;
+    return min_value;
+}

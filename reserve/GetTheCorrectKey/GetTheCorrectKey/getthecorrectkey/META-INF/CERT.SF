@@ -1,0 +1,73 @@
+Signature-Version: 1.0
+SHA1-Digest-Manifest: rOC/0nPl3OYGGLw3zFM7zATB64w=
+Created-By: 1.0 (Android SignApk)
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_round.webp
+SHA1-Digest: jq2VSpurPG9GhUIYltFpmQSk6kU=
+
+Name: AndroidManifest.xml
+SHA1-Digest: zWHArobn1Dg/zH/vas+f0/gioU4=
+
+Name: lib/armeabi-v7a/libgetthecorrectkey.so
+SHA1-Digest: YYyub1Zo16zoQ83snPT7GowGy4M=
+
+Name: res/xml/data_extraction_rules.xml
+SHA1-Digest: JrKy+pMNGxWuH/btcApyrx9kLQs=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.webp
+SHA1-Digest: MYTk+Q8cSongY5SuhK+tO9lB9WU=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.webp
+SHA1-Digest: C26KMSRBywgX9oRN4zioO8goN9Q=
+
+Name: res/drawable-anydpi-v24/ic_launcher_foreground.xml
+SHA1-Digest: rXg4ZKL05VYjBILDv+mTTuEEE6E=
+
+Name: res/layout/activity_main.xml
+SHA1-Digest: bp937qiOan72atq0oEqbgpgiPPc=
+
+Name: res/drawable/ic_launcher_background.xml
+SHA1-Digest: 6enmXjNaSPOIdpCHaADmuQdiiZ8=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_round.webp
+SHA1-Digest: Xo3ZvtRz9dcEba7vGzdnmP0UmqQ=
+
+Name: res/mipmap-anydpi-v26/ic_launcher_round.xml
+SHA1-Digest: 1NhMGhuL1AJn+EyoXPySHWkOGUQ=
+
+Name: assets/whoami.bin
+SHA1-Digest: UiIZJbb/ycnpkOaB/HeBdua+VEo=
+
+Name: res/drawable-anydpi-v24/$ic_launcher_foreground__0.xml
+SHA1-Digest: YichEzaAO+sK7IvK7S/8M5rwcyw=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_round.webp
+SHA1-Digest: e/6lKba/tGNteHar2ApnGinTaac=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.webp
+SHA1-Digest: /c5JdG+pBU7p2kJrWR5w4HqUJ68=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.webp
+SHA1-Digest: zK37yVejTbt6doOQTlXeR+FcOTY=
+
+Name: res/xml/backup_rules.xml
+SHA1-Digest: 55uFD3rupUAHd/SapM7WaDulWzc=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.webp
+SHA1-Digest: 62nAseYMRMtjgQVRagUmG7zoN+Q=
+
+Name: res/mipmap-hdpi-v4/ic_launcher_round.webp
+SHA1-Digest: vDAkSYG0zoYLxC73FvbUGh+OSPw=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.webp
+SHA1-Digest: oXMVidFqogZBWM4vni8BLeIfrVU=
+
+Name: resources.arsc
+SHA1-Digest: GmB8vik0pfex4bLcaDO0NLLm5RI=
+
+Name: classes.dex
+SHA1-Digest: u3/9qqVesSKnuyJ23/vhdKrDDXA=
+
+Name: res/mipmap-anydpi-v26/ic_launcher.xml
+SHA1-Digest: BFcr4HIS7eqNfMzdltuqs+6XLfE=
+
