@@ -1,0 +1,17 @@
+32 input ->
+4 * 8 input_sec ->
+8 * input_sec-> 4 * input_sec_12_34_56_78
+->执行八次
+    public static int m1548s(int a, int b) {
+        return (a + b) & 65535;
+    }
+
+    public static int m1547t(int a, int b) {
+        long j = a * b;
+        return (j != 0 ? (int) (j % 65537) : (1 - a) - b) & 65535;
+    }
+
+                    inp12 =  m1547t(inp12, iArr[i14]) ^ m1547t(m1548s(sm1548s(inp34, iArr[i16]) ^ m1547t(inp78, iArr[i18]), m1547t(tm1547t(inp12, iArr[i14]) ^ m1548s(inp56, iArr[i17]), iArr[i19])), iArr[i20]);
+                    inp34 =  m1548s(inp56, iArr[i17]) ^ m1547t(m1548s(sm1548s(inp34, iArr[i16]) ^ m1547t(inp78, iArr[i18]), m1547t(tm1547t(inp12, iArr[i14]) ^ m1548s(inp56, iArr[i17]), iArr[i19])), iArr[i20]);
+                    inp56 =  m1548s(inp34, iArr[i16]) ^ m1548s(t3, t4);
+                    inp78 =  m1547t(inp78, iArr[i18]) ^ m1548s(t3, t4);
