@@ -4,7 +4,7 @@
 16: const 27 ; 69 		E
 21: const 28 ; 65 		A
 26: array 3
-31: store 0 0
+31: store 0 0                           //SEAelouzeibeluiqui
 34: const 30 ; 101 		e
 39: const 31 ; 108 		l
 44: const 32 ; 111 		o
@@ -20,7 +20,7 @@
 94: const 37 ; 113 		q
 99: const 33 ; 117 		u
 104: const 35 ; 105		i 
-109: const 37 ; 113 		q
+109: const 37 ; 113 	q
 114: array 16
 119: store 0 1
 122: const 39 ; 0 				
@@ -58,16 +58,16 @@
 216: load 0 4
 219: const 46 ; 3 
 224: mod
-225: getitem		array0[i%3] += array3[i]
-226: add
+225: getitem		
+226: add     //array0[i%3] + array3[i] 栈顶
 227: load 0 1
 230: load 0 4
 233: const 47 ; 16 		
 238: mod
-239: getitem		a  = (array1[i%16]+array0[i%3])&0xff
-240: add
+239: getitem		
+240: add            
 241: const 42 ; 256 
-246: mod
+246: mod            //a  = (array1[i%16]+array0[i%3] + array3[i])&0xff
 247: load 0 3
 250: load 0 4		
 253: setitem		array3[i] = a
@@ -82,7 +82,7 @@
 279: load 0 5
 282: const 46 ; 3 
 287: lt
-288: jz 448
+288: jz 448           //循环
 
 
 293: const 39 ; 0 
@@ -90,7 +90,7 @@
 301: load 0 6
 304: const 42 ; 256 
 309: lt
-310: jz 366
+310: jz 366            //循环
 
 315: load 0 3
 318: load 0 6
