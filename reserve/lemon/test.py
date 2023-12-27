@@ -32,4 +32,4 @@ t8 = t8*30 - 5
 t8 = t8*40 - 5
 t8 = t8*50 + 6645
 print(t8)
-
+#aaaaaaaaaaaaaaaaaaaaaa

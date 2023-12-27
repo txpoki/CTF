@@ -1,0 +1,52 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "77729c8ffd0422aca20e56e149e0a03f_839fccb8"
+    },
+    {
+      "type": "java",
+      "name": "a",
+      "request": "launch",
+      "mainClass": "a",
+      "projectName": "77729c8ffd0422aca20e56e149e0a03f_839fccb8"
+    },
+    {
+      "type": "java",
+      "name": "m",
+      "request": "launch",
+      "mainClass": "m",
+      "projectName": "77729c8ffd0422aca20e56e149e0a03f_839fccb8"
+    },
+    {
+      "type": "java",
+      "name": "D",
+      "request": "launch",
+      "mainClass": "D",
+      "projectName": "77729c8ffd0422aca20e56e149e0a03f_839fccb8"
+    },
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "cppdbg",
+      "request": "launch",
+      "args": [],
+      "stopAtEntry": false,
+      "externalConsole": true,
+      "cwd": "g:/CTF/NCTF/jvav/77729c8ffd0422aca20e56e149e0a03f",
+      "program": "g:/CTF/NCTF/jvav/77729c8ffd0422aca20e56e149e0a03f/build/Debug/outDebug",
+      "MIMode": "gdb",
+      "miDebuggerPath": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ]
+    }
+  ]
+}
