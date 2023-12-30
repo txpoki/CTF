@@ -1,2 +1,7 @@
 "args": ["-NoExit", "/C", "chcp 65001"]
 flag{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}
+00101101100001000000
+            10110110
+            00110110
+            11011000
+            11011011

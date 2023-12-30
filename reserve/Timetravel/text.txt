@@ -1,0 +1,4 @@
+flag{e25be952}
+int __fastcall sub_4CF8(int a1, int a2, int a3)
+*(k_final + v16) = k_init[v16 - 62 * (((v1 * v16) >> 32) + v16 >> 5) + (((v1 * v16) >> 32) + v16 >> 0x1F)];
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789
