@@ -1,0 +1,43 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <base64.h>
+
+char* encrypt(char* plainText, char* key) {
+    int i, j, j2, round, row, column;
+    int length = ((strlen(plainText) + 15) / 16) * 16;
+    char* resultBytes = (char*) malloc(length * sizeof(char));
+    char* keyBytes = key;
+    char* plainTextBytes = plainText;
+    for (i = 0; i < strlen(plainTextBytes); i += 16) {
+        char inputBytes[16];
+        for (j = 0; j < 16 && i + j < strlen(plainTextBytes); j++) {
+            inputBytes[j] = plainTextBytes[i + j];
+        }
+        LightState state = LightState(inputBytes);
+        for (round = 0; round <= 10; round++) {
+            char roundKey[16];
+            for (j2 = 0; j2 < 16; j2++) {
+                roundKey[j2] = keyBytes[(round * 16) + j2];
+            }
+            if (round == 0) {
+                state.addRoundKey(roundKey);
+            } else if (round < 10) {
+                state.substitute();
+                state.shiftRows();
+                state.mixCloumns();
+                state.addRoundKey(roundKey);
+            } else {
+                state.substitute();
+                state.shiftRows();
+                state.addRoundKey(roundKey);
+            }
+        }
+        for (row = 0; row < 4; row++) {
+            for (column = 0; column < 4; column++) {
+                resultBytes[(row * 4) + i + column] = state.value(row, column);
+            }
+        }
+    }
+    return base64_encode(resultBytes, length, NULL);
+}
