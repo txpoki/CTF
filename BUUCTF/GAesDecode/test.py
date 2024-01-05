@@ -51,7 +51,7 @@ def decrypt(cipher):
         #print(list(c), states)
         for j in range(10,-1,-1):   #11轮每轮先异或key
             roundKey = key[j*16: j*16+16]
-            #print(roundKey)
+            print(roundKey)
             if j == 0:
                 states = andRoundKey(states, roundKey)
             elif j < 10:
