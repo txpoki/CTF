@@ -1,0 +1,43 @@
+namespace NSSCTF
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            var keyArray = new ulong[] { 0x57656c636f6d6520, 0x746f204e53534354, 0x4620526f756e6423, 0x3136204261736963 };
+            var dataArray = new ulong[] { 0xc60b34b2bff9d34a, 0xf50af3aa8fd96c6b, 0x680ed11f0c05c4f1, 0x6e83b0a4aaf7c1a3, 0xd69b3d568695c3c5, 0xa88f4ff50a351da2, 0x5cfa195968e1bb5b, 0xc4168018d92196d9 };
+            const ulong XTEA_DELTA = 0x9E3779B9;
+
+            var shifts = Enumerable.Range(0, 32).Select(shift => XTEA_DELTA * (32 - (uint)shift)).ToArray();
+
+            var resultArray = dataArray.Select((data, index) => new { Value = data, Index = index })
+                .GroupBy(pair => pair.Index / 2)
+                .Select(group =>
+                {
+                    ulong v0 = group.ElementAt(0).Value;
+                    ulong v1 = group.ElementAt(1).Value;
+                    ulong sum = XTEA_DELTA * 32;
+
+                    shifts.ToList().ForEach(shift =>
+                    {
+                        v1 -= (((v0 << 4) ^ (v0 >> 5)) + v0) ^ (sum + keyArray[(sum >> 11) & 3]);
+                        sum -= XTEA_DELTA;
+                        v0 -= (((v1 << 4) ^ (v1 >> 5)) + v1) ^ (sum + keyArray[sum & 3]);
+                    });
+                    return new[] { v0, v1 };
+                })
+                .SelectMany(pairArray => pairArray)
+                .ToArray();
+
+            Array.Copy(shifts, dataArray, dataArray.Length);
+
+            dataArray.SelectMany(value => BitConverter.GetBytes(new ZZZ(value).GetVal()).Reverse())
+                .ToList()
+                .ForEach(character => Console.Write(Encoding.ASCII.GetString(new[] { character })));
+            
+            // Output: NSSCTF{xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx}
+            // Try to compile me!!!
+        }
+    }
+}
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
