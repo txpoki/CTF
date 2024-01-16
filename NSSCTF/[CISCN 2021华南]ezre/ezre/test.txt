@@ -1,0 +1,207 @@
+flag{aaaaaaaaaaaaaaaaaaaaaaaaaa}
+puts 4010C0
+int 3
+.text:00000000004012DD                 mov     [rbp+var_4C], 0
+.text:00000000004012E4                 mov     eax, cs:dword_405080
+.text:00000000004012EA                 mov     [rbp+var_50], eax
+.text:00000000004012ED                 mov     eax, cs:dword_405084
+.text:00000000004012F3                 mov     byte ptr [rbp+var_44], al
+.text:00000000004012F6                 mov     eax, cs:dword_405088
+.text:00000000004012FC                 mov     byte ptr [rbp+var_44+1], al
+.text:00000000004012FF                 mov     eax, cs:dword_405084
+.text:0000000000401305                 mov     byte ptr [rbp+var_44+2], al
+.text:0000000000401308                 mov     byte ptr [rbp+var_44+3], 1
+read 4010F0h
+
+.text:0000000000401458                 cmp     [rbp+var_48], 9
+
+.text:000000000040126B                 mov     rax, [rbp+var_20]
+.text:000000000040126F                 mov     eax, [rax]
+
+
+
+.text:0000000000401434                 mov     rax, [rbp+var_20]
+.text:0000000000401438                 mov     eax, [rax]
+.text:000000000040143A                 cmp     eax, 6
+
+.text:0000000000401330                 mov     rax, [rbp+var_20]
+.text:0000000000401334                 mov     eax, [rax]
+.text:0000000000401336                 mov     edx, [rbp+var_14]
+.text:0000000000401339                 mov     ecx, eax
+.text:000000000040133B                 shr     edx, cl
+.text:000000000040133D                 mov     eax, edx
+.text:000000000040133F                 and     eax, 1
+.text:0000000000401342                 test    eax, eax
+
+.text:0000000000401296                 mov     rax, [rbp+var_20]
+.text:000000000040129A                 mov     eax, [rax]
+.text:000000000040129C                 mov     dword ptr [rbp+var_8+4], eax
+
+.text:00000000004013E3                 mov     eax, dword ptr [rbp+var_8+4]
+
+.text:0000000000401361                 pop     rbp
+
+.text:0000000000401359                 mov     [rbp+var_48], eax
+.text:000000000040135C                 cmp     [rbp+var_48], 8
+
+.text:000000000040147B                 cmp     [rbp+var_48], 0
+
+.text:00000000004013FB                 movzx   eax, byte ptr [rbp+var_44]
+.text:00000000004013FF                 movzx   eax, al
+.text:0000000000401402                 and     eax, 3Fh
+.text:0000000000401405                 cdqe
+.text:0000000000401407                 movzx   eax, [rbp+rax+var_40]
+.text:000000000040140C                 mov     byte ptr [rbp+var_44], al
+
+.text:000000000040148D                 mov     eax, [rbp+var_58]
+.text:0000000000401490                 add     eax, 1
+.text:0000000000401493                 mov     [rbp+var_58], eax
+
+.text:000000000040130D                 mov     eax, [rbp+var_50]
+.text:0000000000401310                 lea     rdx, [rbp+var_58]
+.text:0000000000401314                 mov     ecx, [rbp+var_44]
+.text:0000000000401317                 mov     esi, ecx
+.text:0000000000401319                 mov     edi, eax
+
+.text:000000000040143E                 endbr64
+.text:0000000000401442                 push    rbp
+.text:0000000000401443                 mov     rbp, rsp
+.text:0000000000401446                 mov     [rbp+var_14], edi
+.text:0000000000401449                 mov     [rbp-18h], esi
+.text:000000000040144C                 mov     [rbp+var_20], rdx
+.text:0000000000401450                 cmp     [rbp+var_14], 3E7h
+
+.text:000000000040126B                 mov     rax, [rbp+var_20]
+.text:000000000040126F                 mov     eax, [rax]
+.text:0000000000401271
+.text:0000000000401271 loc_401271:                             ; DATA XREF: .data:off_4058C0↓o
+.text:0000000000401271                 cmp     eax, 6
+
+.text:0000000000401434                 mov     rax, [rbp+var_20]
+.text:0000000000401438                 mov     eax, [rax]
+.text:000000000040143A                 cmp     eax, 6
+
+.text:0000000000401330                 mov     rax, [rbp+var_20]
+.text:0000000000401334                 mov     eax, [rax]
+.text:0000000000401336                 mov     edx, [rbp+var_14]
+.text:0000000000401339                 mov     ecx, eax
+.text:000000000040133B                 shr     edx, cl
+.text:000000000040133D                 mov     eax, edx
+.text:000000000040133F                 and     eax, 1
+.text:0000000000401342                 test    eax, eax
+
+.text:000000000040145D                 mov     rax, [rbp+var_20]
+.text:0000000000401461                 mov     eax, [rax]
+.text:0000000000401463                 lea     edx, [rax+1]
+.text:0000000000401466                 mov     rax, [rbp+var_20]
+.text:000000000040146A                 mov     [rax], edx
+
+.text:0000000000401330                 mov     rax, [rbp+var_20]
+.text:0000000000401334                 mov     eax, [rax]
+.text:0000000000401336                 mov     edx, [rbp+var_14]
+.text:0000000000401339                 mov     ecx, eax
+.text:000000000040133B                 shr     edx, cl
+.text:000000000040133D                 mov     eax, edx
+.text:000000000040133F                 and     eax, 1
+.text:0000000000401342                 test    eax, eax
+
+.text:0000000000401296                 mov     rax, [rbp+var_20]
+.text:000000000040129A                 mov     eax, [rax]
+.text:000000000040129C                 mov     dword ptr [rbp+var_8+4], eax
+
+.text:00000000004013E3                 mov     eax, dword ptr [rbp+var_8+4]
+
+.text:0000000000401361                 pop     rbp
+
+.text:0000000000401359                 mov     [rbp+var_48], eax
+.text:000000000040135C                 cmp     [rbp+var_48], 8
+
+.text:000000000040147B                 cmp     [rbp+var_48], 0
+
+.text:000000000040142D                 cmp     [rbp+var_48], 1
+
+.text:00000000004014F1                 cmp     [rbp+var_48], 2
+
+.text:000000000040146D                 movzx   edx, byte ptr [rbp+var_44+1]
+.text:0000000000401471                 movzx   eax, byte ptr [rbp+var_44]
+.text:0000000000401475                 xor     eax, edx
+.text:0000000000401477                 mov     [rbp+var_59], al
+
+.text:000000000040148D                 mov     eax, [rbp+var_58]
+.text:0000000000401490                 add     eax, 1
+.text:0000000000401493                 mov     [rbp+var_58], eax
+
+.text:000000000040130D                 mov     eax, [rbp+var_50]
+.text:0000000000401310                 lea     rdx, [rbp+var_58]
+.text:0000000000401314                 mov     ecx, [rbp+var_44]
+.text:0000000000401317                 mov     esi, ecx
+.text:0000000000401319                 mov     edi, eax
+
+.text:000000000040143E                 endbr64
+.text:0000000000401442                 push    rbp
+.text:0000000000401443                 mov     rbp, rsp
+.text:0000000000401446                 mov     [rbp+var_14], edi
+.text:0000000000401449                 mov     [rbp-18h], esi
+.text:000000000040144C                 mov     [rbp+var_20], rdx
+.text:0000000000401450                 cmp     [rbp+var_14], 3E7h
+
+.text:000000000040126B                 mov     rax, [rbp+var_20]
+.text:000000000040126F                 mov     eax, [rax]
+
+.text:0000000000401434                 mov     rax, [rbp+var_20]
+.text:0000000000401438                 mov     eax, [rax]
+.text:000000000040143A                 cmp     eax, 6
+
+.text:0000000000401330                 mov     rax, [rbp+var_20]
+.text:0000000000401334                 mov     eax, [rax]
+.text:0000000000401336                 mov     edx, [rbp+var_14]
+.text:0000000000401339                 mov     ecx, eax
+.text:000000000040133B                 shr     edx, cl
+.text:000000000040133D                 mov     eax, edx
+.text:000000000040133F                 and     eax, 1
+.text:0000000000401342                 test    eax, eax
+
+.text:0000000000401296                 mov     rax, [rbp+var_20]
+.text:000000000040129A                 mov     eax, [rax]
+.text:000000000040129C                 mov     dword ptr [rbp+var_8+4], eax
+
+.text:00000000004013E3                 mov     eax, dword ptr [rbp+var_8+4]
+
+.text:0000000000401361                 pop     rbp
+
+.text:0000000000401359                 mov     [rbp+var_48], eax
+.text:000000000040135C                 cmp     [rbp+var_48], 8
+
+.text:000000000040147B                 cmp     [rbp+var_48], 0
+
+.text:000000000040142D                 cmp     [rbp+var_48], 1
+
+.text:00000000004014F1                 cmp     [rbp+var_48], 2
+
+.text:00000000004013F6                 cmp     [rbp+var_48], 3
+
+.text:000000000040134B                 movzx   edx, byte ptr [rbp+var_44+1]
+.text:000000000040134F                 movzx   eax, byte ptr [rbp+var_44]
+.text:0000000000401353                 and     eax, edx
+.text:0000000000401355                 mov     byte ptr [rbp+var_44+1], al
+
+.text:000000000040148D                 mov     eax, [rbp+var_58]
+.text:0000000000401490                 add     eax, 1
+.text:0000000000401493                 mov     [rbp+var_58], eax
+
+.text:000000000040130D                 mov     eax, [rbp+var_50]
+.text:0000000000401310                 lea     rdx, [rbp+var_58]
+.text:0000000000401314                 mov     ecx, [rbp+var_44]
+.text:0000000000401317                 mov     esi, ecx
+.text:0000000000401319                 mov     edi, eax
+
+.text:000000000040143E                 endbr64
+.text:0000000000401442                 push    rbp
+.text:0000000000401443                 mov     rbp, rsp
+.text:0000000000401446                 mov     [rbp+var_14], edi
+.text:0000000000401449                 mov     [rbp-18h], esi
+.text:000000000040144C                 mov     [rbp+var_20], rdx
+.text:0000000000401450                 cmp     [rbp+var_14], 3E7h
+
+.text:000000000040126B                 mov     rax, [rbp+var_20]
+.text:000000000040126F                 mov     eax, [rax]
