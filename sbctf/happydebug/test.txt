@@ -1,0 +1,52 @@
+SBCTF{aaaaaaaaaaaaaaaaa}
+unsigned int unk_7FF6ECDFF000[6] = {
+    0xA277D8E4, 0x8086DCE7, 0xBB628958, 0x707AD782, 0xA833C0F8, 0x523EEC46
+};
+this_is_the_key!
+06
+ 0Fh
+D3h
+ 12h
+0ECh
+ 14h
+0F5h
+0FDh
+ 97h
+0B1h
+0E9h
+ 12h
+0EFh
+0BBh
+0C7h
+ 61h ; a
+12d30f06 fdf514ec 12e9be97 61c7bbef
+ a                                                   20h
+Stack[00001D60]:000000E542F8EC51                 db 0DDh
+Stack[00001D60]:000000E542F8EC52                 db  83h
+Stack[00001D60]:000000E542F8EC53                 db  60h ; `
+
+Stack[00001D60]:000000E542F8EC54                 db  57h ; W
+Stack[00001D60]:000000E542F8EC55                 db 0ECh
+Stack[00001D60]:000000E542F8EC56                 db 0ACh
+Stack[00001D60]:000000E542F8EC57                 db  3Eh ; >
+
+Stack[00001D60]:000000E542F8EC58                 db  2Bh ; +
+Stack[00001D60]:000000E542F8EC59                 db 0E6h
+Stack[00001D60]:000000E542F8EC5A                 db    0
+Stack[00001D60]:000000E542F8EC5B                 db 0ECh
+
+Stack[00001D60]:000000E542F8EC5C                 db  0Ch
+Stack[00001D60]:000000E542F8EC5D                 db 0C4h
+Stack[00001D60]:000000E542F8EC5E                 db  28h ; (
+Stack[00001D60]:000000E542F8EC5F                 db 0D1h
+
+Stack[00001D60]:000000E542F8EC60                 db 0EAh
+Stack[00001D60]:000000E542F8EC61                 db  6Dh ; m
+Stack[00001D60]:000000E542F8EC62                 db  91h
+Stack[00001D60]:000000E542F8EC63                 db 0B8h
+
+Stack[00001D60]:000000E542F8EC64                 db 0ECh
+Stack[00001D60]:000000E542F8EC65                 db  6Dh ; m
+Stack[00001D60]:000000E542F8EC66                 db  67h ; g
+                                                       b4
+                                                       SBCTF{there_22e_many_evil_methods_to_anti_debug}

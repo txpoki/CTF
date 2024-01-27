@@ -1,0 +1,34 @@
+unsigned int data[8] = {
+    0x54434253, 0x61617B46, 0x61616161, 0x61616161, 0x61616161, 0x61616161, 0x61616161, 0x7D616161
+};
+ 0x0913BC10, 0x7AD2DE6F, 0xEC01321E, 0x33C2A85D, 0x4476C2DE, 0x59714E3B, 0xF5B45769, 0x04B4E6EC
+unsigned int __cdecl sub_600011ED(int input_4, unsigned int n_8, int key)
+{
+  unsigned int result; // eax
+  unsigned int y; // [esp+8h] [ebp-20h]
+  unsigned int i; // [esp+10h] [ebp-18h]
+  unsigned int rounds; // [esp+14h] [ebp-14h]
+  unsigned int sum; // [esp+18h] [ebp-10h]
+  unsigned int z; // [esp+1Ch] [ebp-Ch]
+
+  sum = 0;
+  rounds = 0x34 / n_8 + 6;
+  z = *(4 * (n_8 + 0x3FFFFFFF) + input_4);
+  do
+  {
+    sum -= 1640531527;
+    for ( i = 0; ; ++i )
+    {
+      result = i;
+      if ( n_8 <= i )
+        break;
+      y = *(4 * ((i + 1) % n_8) + input_4);
+      z += ((y ^ sum) + (z ^ *(4 * ((sum >> 2) & 3 ^ i & 3) + key)))  ^  (((4 * y) ^ (z >> 5)) + ((y >> 3) ^ (16 * z)));
+     
+    }
+    --rounds;
+  }
+  while ( rounds );
+  return result;
+}
+SBCTF{aaaaaaaaaaaaaaaaaaaaaaaaa}

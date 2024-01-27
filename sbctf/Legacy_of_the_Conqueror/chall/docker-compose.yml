@@ -1,0 +1,22 @@
+version: '2'
+services:
+  service: 
+    # build 该置顶目录下的dockerfile
+    build: .
+    # image 指定build Dockerfile生成镜像的名称
+    # 如需直接使用 dockerhub 镜像请删除 build 行并在 image 处写 username/imagename
+    image: week1-pwn-4
+    ports:
+      - 9999:10000 # 外部 expose port 一律使用9999
+    volumes:
+        # 挂载的 Flag
+        - "$PWD/flag:/flag"
+    tty: true
+    networks:
+      - net
+
+networks: 
+    # 配置docker network
+    net: 
+      external: 
+         name: h1ve_frp_containers

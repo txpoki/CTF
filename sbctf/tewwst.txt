@@ -1,5 +1,0 @@
-main
-methon3
-method1(合并四字节)
-methon4
-0x49BF1BED,0xB31C6C52,0x2B3CF23A,0x1C2CEB4D,0x1F722B62,0x581117F7
